@@ -1,2 +1,3 @@
 # AngularFH
-Angular FH Projekt
+Angular FH Projekt IDW WS 2019/20
+
