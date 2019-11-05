@@ -36,11 +36,12 @@ export class EmployeeComponent implements OnInit {
         this.EmpList.splice(_index,1);
     }
     updateData = function () {
-        
+
         //console.log(id);
     }
     constructor() { }
 
+    // For dependency Injections
     ngOnInit() { }
 
 }
