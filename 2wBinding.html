@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>   
+    </head>
+    <div ng-app="myApp" ng-controller="myCtrl">
+        Id: <input type="number" ng-model="Person.Id" id="Id"> <br>
+        First Name: <input type="text" ng-model="Person.firstName"> <br>
+        Last Name: <input type="text" ng-model="Person.lastName"> <br>
+        <button ng-click="pushData()"> Push to List</button>
+        <br>
+        <button ng-click="updateData()">Update the Person</button>
+        <br>
+        <table border=1>
+            <tr>
+                <th>
+                    Id
+                </th>
+                <th>
+                    firstName
+                </th>
+                <th>
+                    lastName:
+                </th>
+            </tr>
+            <tr data-ng-repeat="Person in PersonList">
+                <td>
+                    {{Person.Id}}
+                </td>
+                <td>
+                    {{Person.firstName}}
+                </td>
+                <td>
+                    {{Person.lastName}}
+                </td>
+                <td>
+                    <button ng-click="deleteData(Person)">Delete</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script>
+        var app = angular.module('myApp', []);
+        app.controller('myCtrl', function($scope) {
+            $scope.PersonList = [];
+            $scope.Person = {
+                Id : 1,
+                firstName: "John",
+                lastName: "Doe"
+            }
+            $scope.pushData = function() {
+                var _Person = {
+                    Id: $scope.PersonList.length + 1,
+                    firstName: $scope.Person.firstName,
+                    lastName: $scope.Person.lastName
+                };
+                $scope.PersonList.push(_Person);
+            }
+            $scope.updateData = function() {
+                var element = document.getElementById("Id");
+                var text = element.textContent();
+                console.log(text)
+                $scope.Person.Id = Person.Id;
+                $scope.Person.firstName = Person.firstName;
+                $scope.Person.lastName = Person.lastName;
+            }
+            $scope.deleteData = function(Person) {
+                console.log("deleting")
+                var _index = $scope.PersonList.indexOf(Person);
+                $scope.PersonList.splice(_index, 1);
+            }
+        });
+    </script> 
+
+</html>

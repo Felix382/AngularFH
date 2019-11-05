@@ -1,0 +1,96 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body >
+    
+      
+    <div class="container_Fluid" ng-app="mainApp">
+            <h1>Get xkcd by number: </h1>
+            <p>Number: <input type="number" ng-model="scope"></p>
+            <button data-ng-click="SaveData()">Click to add</button>
+            <p ng-bind="scope"></p>
+    </div>
+    
+    <div>
+        <table border=1>
+            <tr>
+                <th>
+                    Number
+                </th>
+                <th>
+                    Title
+                </th>
+                <th>
+                    alternative Text
+                </th>
+                <th>
+                    Transkript
+                </th>
+                <th>
+                    add to favorite and download
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    Number 1
+                </td>
+                <td>
+                    Title 1
+                </td>
+                <td>
+                    alternative Text 1
+                </td>
+                <td>
+                    Transkript 1
+                </td>
+                <td>
+                    <button>add to favorite and download</button>
+                </td>
+            <tr>
+                <td>
+                    Number 2
+                </td>
+                <td>
+                    Title 2
+                </td>
+                <td>
+                    alternative Text 2
+                </td>
+                <td>
+                    Transkript 2
+                </td>
+                <td>
+                    <button>add to favorite and download</button>
+                </td>
+            </tr>
+        </table>       
+    </div>
+    <script>
+        var app = angular.module("mainApp", []);
+        app.controller('CRUDController', function ($scope) {
+
+            $scope.xkcdModel = {
+                Id: 0,
+                Title: "",
+                Text: "",
+                url: ""
+            };
+            $scope.xkcdList = [];
+            $scope.SaveData = function() {
+                var _emp = {
+                    Id: $scope.xkcdList.length + 1,
+                    Name: $scope.xkcdModel.Name,
+                    Text: $scope.xkcdModel.Text,
+                    url: $scope.xkcdModel.url
+                };
+                $scope.xkcdList.push(_emp);
+            }
+        });
+        
+    </script>
+</body>
+</html>

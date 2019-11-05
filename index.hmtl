@@ -1,0 +1,72 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+
+<body>
+    
+    <div class="container-fluid">
+        <h1>xkcd Retriever</h1>
+        <p>Download xkcd to your local database by clicking the Button</p>
+    </div>
+    <div>
+        <table border=1 bordercolor="red">
+            <tr>
+                <th>
+                    Number
+                </th>
+                <th>
+                    Title
+                </th>
+                <th>
+                    alternative Text
+                </th>
+                <th>
+                    Transkript
+                </th>
+                <th>
+                    add to favorite and download
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    Number 1
+                </td>
+                <td>
+                    Title 1
+                </td>
+                <td>
+                    alternative Text 1
+                </td>
+                <td>
+                    Transkript 1
+                </td>
+                <td>
+                    <button>add to favorite and download</button>
+                </td>
+            <tr>
+                <td>
+                    Number 2
+                </td>
+                <td>
+                    Title 2
+                </td>
+                <td>
+                    alternative Text 2
+                </td>
+                <td>
+                    Transkript 2
+                </td>
+                <td>
+                    <button>add to favorite and download</button>
+                </td>
+            </tr>
+        </table>       
+    </div>
+    
+      
+</body>
+</html>

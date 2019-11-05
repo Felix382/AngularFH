@@ -1,0 +1,19 @@
+
+
+The ng-app directive defines an AngularJS application.
+
+The ng-model directive binds the value of HTML controls (input, select, textarea) to application data.
+
+The ng-bind directive binds application data to the HTML view. 
+
+
+anonymous function
+app.controller("CRUDController", function($scope){
+
+});
+Callback, we make use of the event loop. We have to wait until the function is finished.excel 
+
+
+
+app.component.html 
+Ist für die "Hauptseite" -> Navigationsbar, header, footer etc

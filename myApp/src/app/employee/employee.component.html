@@ -1,0 +1,24 @@
+
+
+<div >
+    Id: <input type="number" [(ngModel)]="EmpModel.Id" id="Id"> <br>
+    First Name: <input type="text" [(ngModel)]="EmpModel.Name"> <br>
+    Salary: <input type="text" [(ngModel)]="EmpModel.Salary"> <br>
+    <button (click)="saveData()"> Push to List</button>
+    <button (click)="updateData()"> updateData</button>
+    <table border=1>
+        <thead>
+            <th>Id</th>
+            <th>Name </th>
+            <th>Salary</th>
+            <th>Bonus</th>
+        </thead>
+        <tr *ngFor="let Emp of EmpList" (click)="ShowCurrentData(Emp)">
+            <td>{{Emp.Id}}</td>
+            <td>{{Emp.Name}}</td>
+            <td>{{Emp.Salary}}</td>
+            <td>{{Emp.Bonus}}</td>
+            <td><input type="button" value="Delete" (click)="DeleteData(Emp)"></td>
+        </tr>
+    </table>
+</div>
