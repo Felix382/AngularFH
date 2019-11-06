@@ -1,0 +1,22 @@
+{
+	"title":"Recipe Puppy","version":0.1,"href":"http:\/\/www.recipepuppy.com\/","results":
+	[
+		{"title":"Apple Streusel Muffins","href":"http:\/\/www.recipezaar.com\/Apple-Streusel-Muffins-318905","ingredients":"flour, apple, brown sugar, butter, apple, walnut","thumbnail":""},
+		{"title":"Apple-Cranberry Wheat Muffins","href":"http:\/\/www.recipezaar.com\/Apple-Cranberry-Wheat-Muffins-140962","ingredients":"flour, apple juice, apple, baking powder, cinnamon, cranberries, eggs, evaporated milk, sugar, cinnamon, wheat germ, vegetable oil, flour","thumbnail":"http:\/\/img.recipepuppy.com\/73222.jpg"},
+		{"title":"Chunky French Applesauce","href":"http:\/\/www.recipezaar.com\/Chunky-French-Applesauce-186364","ingredients":"apple, butter, cinnamon, lemon juice, sugar, water","thumbnail":""},
+		{"title":"Streusel Apple and Raisin Muffins","href":"http:\/\/www.recipezaar.com\/Streusel-Apple-and-Raisin-Muffins-86886","ingredients":"apple, applesauce, baking powder, baking soda, brown sugar, vegetable oil, cinnamon, eggs, flour, raisins, vanilla extract","thumbnail":"http:\/\/img.recipepuppy.com\/40799.jpg"},
+		{"title":"Apple ?n? Spice Muffins","href":"http:\/\/www.recipezaar.com\/Apple-n-Spice-Muffins-136479","ingredients":"flour, apple, baking powder, baking soda, brown sugar, butter, cinnamon, eggs, nutmeg, salt, skim milk","thumbnail":"http:\/\/img.recipepuppy.com\/72532.jpg"},
+		{"title":"Apple 'n' Spice Muffins","href":"http:\/\/www.recipezaar.com\/Apple-n-Spice-Muffins-181178","ingredients":"apple, baking powder, baking soda, brown sugar, butter, cinnamon, eggs, flour, nutmeg, salt, skim milk","thumbnail":"http:\/\/img.recipepuppy.com\/64560.jpg"},
+		{"title":"Apple Nut Cinnamon Muffins With Brown Sugar -Cinnamon Topping","href":"http:\/\/www.recipezaar.com\/Apple-Nut-Cinnamon-Muffins-With-Brown-Sugar-Cinnamon-Topping-131206","ingredients":"apple, baking powder, brown sugar, butter, cinnamon, cinnamon, eggs, flour, half and half, salt, sugar, sugar, walnut","thumbnail":"http:\/\/img.recipepuppy.com\/68694.jpg"},
+		{"title":"Double Apple Muffins","href":"http:\/\/www.recipezaar.com\/Double-Apple-Muffins-301071","ingredients":"milk, flour, apple, apple juice, baking powder, brown sugar, vegetable oil, cinnamon, eggs, oats, salt","thumbnail":"http:\/\/img.recipepuppy.com\/211476.jpg"},
+		{"title":"Banana Apple Muffins","href":"http:\/\/allrecipes.com\/Recipe\/Banana-Apple-Muffins\/Detail.aspx","ingredients":"allspice, baking powder, cinnamon, eggs, flour, apple, milk, oats, salt, sugar, vegetable oil","thumbnail":"http:\/\/img.recipepuppy.com\/13183.jpg"},
+		{"title":"Easy and Cheap Apple Cinnamon Coffee Cake","href":"http:\/\/www.recipezaar.com\/Easy-and-Cheap-Apple-Cinnamon-Coffee-Cake-161034","ingredients":"apple, brown sugar, cinnamon, eggs, vegetable oil, water","thumbnail":""}
+	]
+
+
+}
+
+
+Appcomponent zusammenstellen
+oben eine Suchleiste -> Bei Klicken des Suchen Buttons wird die SUche gestartet und in einem Component die Ergebnisse angezeigt: Name, Zutatenliste, Bild
+Bei Klick auf ein Ergebnis wird eine seite mit details aufgerufen
