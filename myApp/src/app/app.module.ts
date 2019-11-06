@@ -6,7 +6,9 @@ import { AppComponent } from './app.component';
 import { EmployeeComponent } from './employee/employee.component';
 import { ImpressumComponent } from './impressum/impressum.component';
 
-import { FormsModule} from '@angular/forms'
+import { FormsModule} from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import { AngularMaterialModule } from '../material/material.module'
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { FormsModule} from '@angular/forms'
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+    AngularMaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]

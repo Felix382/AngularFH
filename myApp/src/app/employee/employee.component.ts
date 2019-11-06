@@ -36,12 +36,18 @@ export class EmployeeComponent implements OnInit {
         this.EmpList.splice(_index,1);
     }
     updateData = function () {
-
+        const inputElement: HTMLInputElement = document.getElementById('Id') as HTMLInputElement
+        const inputValue: string = inputElement.value
+        var value = -1; // y: number
+        console.log(this.EmpList[value]);
+        this.EmpList[value].Id = this.EmpModel.Id;
+        this.EmpList[value].Name = this.EmpModel.Name;
+        this.EmpList[value].Bonus = this.EmpModel.Bonus;
+        
         //console.log(id);
     }
     constructor() { }
 
     // For dependency Injections
     ngOnInit() { }
-
 }
