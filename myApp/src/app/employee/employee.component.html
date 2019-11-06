@@ -2,7 +2,6 @@
     Id: <input type="number" [(ngModel)]="EmpModel.Id" id="Id"> <br>
     First Name: <input type="text" [(ngModel)]="EmpModel.Name"> <br>
     Salary: <input type="text" [(ngModel)]="EmpModel.Salary"> <br>
-    <button mat-button>Click me!</button>
     <button (click)="saveData()"> Push to List</button>
     <button (click)="updateData()"> updateData</button>
     <table border=1>
@@ -21,6 +20,15 @@
         </tr>
     </table>
 </div>
-<button mat-button>Click me!</button>
-<button mat-raised-button>Click me!</button>
-<button mat-stroked-button>Click me!</button>
+<div class="aktiv">
+        <button mat-stroked-button (click)="addOne()">Click me!</button>
+        <p>{{counter}}</p>
+</div>
+<!-- <div [ngStyle]="{'background-color': counter < 4 ? 'green': 'blue'">
+    Das ist ein div!
+</div> -->
+
+<!-- <div class="container" [ngClass]="setClasses()"> -->
+<div [ngClass]="setClasses()">
+    Das ist ein div!
+</div>

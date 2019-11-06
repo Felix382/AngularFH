@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActiveDescendantKeyManager } from '@angular/cdk/a11y';
 
 @Component({
   selector: 'app-employee',
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EmployeeComponent implements OnInit {
     Title: String = "Welcome to homepage"
+    counter = 0;
     EmpModel = {
         Id: 0,
         Salary: 3000,
@@ -31,6 +33,9 @@ export class EmployeeComponent implements OnInit {
         this.EmpModel.Salary = Emp.Salary;
         this.EmpModel.Bonus = Emp.Bonus;
     }
+    addOne = function() {
+        this.counter++;
+    }
     DeleteData = function (Emp) {
         var _index = this.EmpList.indexOf(Emp);
         this.EmpList.splice(_index,1);
@@ -45,6 +50,13 @@ export class EmployeeComponent implements OnInit {
         this.EmpList[value].Bonus = this.EmpModel.Bonus;
         
         //console.log(id);
+    }
+    setClasses = function (){
+        let myClasses = {
+            active: this.counter < 4,
+            notActive: this.counter >= 4
+        };
+        return myClasses;
     }
     constructor() { }
 
