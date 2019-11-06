@@ -61,5 +61,7 @@ export class EmployeeComponent implements OnInit {
     constructor() { }
 
     // For dependency Injections
-    ngOnInit() { }
+    ngOnInit() { 
+        
+    }
 }
