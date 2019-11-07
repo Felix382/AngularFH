@@ -1,0 +1,34 @@
+<br>
+<mat-toolbar>Brewerie
+    <div class="search-form">
+        <input type="text" placeholder="Search Ingredient" id="searchparameter">
+        <button (click)="getBrews()">search</button>
+    </div>
+</mat-toolbar>
+<div *ngFor="let brew of brews | async">
+    {{ brew | json }}
+</div>
+<!-- <div *ngFor="let brew of brews">
+    {{ brew}}
+</div> -->
+
+
+
+<div>
+    <router-outlet></router-outlet>
+</div>
+<table class="appbody">
+    <tr>
+        <td>
+            <app-searchresult></app-searchresult>
+        </td>
+        <td>
+            <app-singlerecipe></app-singlerecipe>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Here come the Favorites
+        </td>
+    </tr>
+</table>

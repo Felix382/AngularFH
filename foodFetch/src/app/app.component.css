@@ -1,0 +1,15 @@
+table{
+    width: 100%
+}
+
+.header-nav{
+    background-color: lightblue;
+    padding: 5px;
+}
+
+.search-form{
+    margin-left:35%;
+}
+.appbody{
+    width: 100%;
+}

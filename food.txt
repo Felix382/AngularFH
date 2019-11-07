@@ -12,11 +12,10 @@
 		{"title":"Banana Apple Muffins","href":"http:\/\/allrecipes.com\/Recipe\/Banana-Apple-Muffins\/Detail.aspx","ingredients":"allspice, baking powder, cinnamon, eggs, flour, apple, milk, oats, salt, sugar, vegetable oil","thumbnail":"http:\/\/img.recipepuppy.com\/13183.jpg"},
 		{"title":"Easy and Cheap Apple Cinnamon Coffee Cake","href":"http:\/\/www.recipezaar.com\/Easy-and-Cheap-Apple-Cinnamon-Coffee-Cake-161034","ingredients":"apple, brown sugar, cinnamon, eggs, vegetable oil, water","thumbnail":""}
 	]
-
-
 }
 
-
+http://www.recipepuppy.com/about/api/
+http://www.recipepuppy.com/api/?i=apple&q=muffin&p=5
 Appcomponent zusammenstellen
 oben eine Suchleiste -> Bei Klicken des Suchen Buttons wird die SUche gestartet und in einem Component die Ergebnisse angezeigt: Name, Zutatenliste, Bild
 Bei Klick auf ein Ergebnis wird eine seite mit details aufgerufen
