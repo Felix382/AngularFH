@@ -17,11 +17,7 @@ export class AppComponent {
     //readonly ROOT_URL = 'http://www.recipepuppy.com/api/?i=';
     readonly ROOT_URL = 'https://api.openbrewerydb.org/breweries';
     recipes: Observable<recipeModel[]>;
-    posts: Observable<post[]>;
     brews: Observable<brew[]>;
-    getPosts() {
-        this.posts = this.http.get<post[]>(this.ROOT_URL + '/posts')
-    }
     // queryApi() {
     //     const inputElement: HTMLInputElement = document.getElementById('searchparameter') as HTMLInputElement;
     //     const inputValue: string = inputElement.value;
@@ -36,7 +32,9 @@ export class AppComponent {
         //     console.log(this.brews);
         // },5000);
     }
-    
+    getBeers(){
+        return this.brews;
+    }
     //httpclient is injectable
     constructor(private http: HttpClient) {}
 }

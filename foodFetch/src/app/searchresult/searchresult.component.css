@@ -1,14 +1,9 @@
 table{
     width: 100%
 }
-
-tr.example-element-row:not(.example-expanded-row):hover {
-    background: #777;
-  }
-
 .z8{
     background-color: aquamarine;
 }
-.z8:hover{
-    background-color: grey;
+.tableRow:hover{
+    background-color:grey;
 }
