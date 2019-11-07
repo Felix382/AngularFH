@@ -1,22 +1,19 @@
 <br>
 <mat-toolbar>Brewerie
     <div class="search-form">
-        <input type="text" placeholder="Search Ingredient" id="searchparameter">
+        <input type="text" placeholder="Search Brewerie" id="searchparameter">
         <button (click)="getBrews()">search</button>
     </div>
 </mat-toolbar>
 <div *ngFor="let brew of brews | async">
     {{ brew | json }}
+    <!-- {{databasedate |date}} -->
 </div>
-<!-- <div *ngFor="let brew of brews">
-    {{ brew}}
-</div> -->
-
-
 
 <div>
     <router-outlet></router-outlet>
 </div>
+
 <table class="appbody">
     <tr>
         <td>
